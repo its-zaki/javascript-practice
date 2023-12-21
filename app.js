@@ -1,50 +1,84 @@
-// let head = document.getElementById("head")
-// head.addEventListener('click', showname)
-// function showname(){
-//     let name = prompt("Enter Name")
-//     head.innerHTML = `Name: ${name}`
-// }
+let head = document.getElementById("head")
+head.addEventListener('click', showname)
+function showname(){
+    let name = prompt("Enter Name")
+    head.innerHTML = `Name: ${name}`
+}
 
 
-// let number = 5.456778
-// let num = number.toFixed()
-// console.log(num);
+let number = 5.456778
+let num = number.toFixed()
+console.log(num);
 
-// let text = "Hello planet earth, you are a great planet.";
-// let result = text.lastIndexOf("great");
-// console.log(result);
+let text = "Hello planet earth, you are a great planet.";
+let output = text.lastIndexOf("great");
+console.log(output);
 
-// const newdate = new  Date(2018, 11 , 25 , 8 , 55 , 0)
-// console.log(newdate.toLocaleDateString());
-// let date = new Date()
-// let d = date.getDay();
-// console.log(d);
+const newdate = new  Date(2018, 11 , 25 , 8 , 55 , 0)
+console.log(newdate.toLocaleDateString());
+let date = new Date()
+let d = date.getDay();
+console.log(d);
 
 
 
-// function totalarea(val1, val2){
-//     let area = val1 * val2 
-//     return area 
+function totalarea(val1, val2){
+    let area = val1 * val2 
+    return area 
     
-// }
-// let val1 = prompt("enter width")
-// let val2 = prompt("enter height")
-// let result = totalarea (val1, val2)
-// console.log('the total area is ' , result);
+}
+let val1 = prompt("enter width")
+let val2 = prompt("enter height")
+let result = totalarea (val1, val2)
+console.log('the total area is ' , result);
 
 
-// function numbercheck(num){
-//     if(num >0){
-//         return "positive";
-//     }
-//     else if (num < 0){
-//         return "negiive";
+function numbercheck(num){
+    if(num >0){
+        return "positive";
+    }
+    else if (num < 0){
+        return "negiive";
 
-//     }
-//     else {
-//         return "zero"
-//     }
-// }
-// let output = numbercheck(0)
+    }
+    else {
+        return "zero"
+    }
+}
+let output1 = numbercheck(0)
 
-// console.log(output);
+console.log(output1);
+
+// spread operator 
+
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const concatenatedArray = [...arr1, ...arr2];
+console.log(concatenatedArray); // Output: [1, 2, 3, 4, 5, 6]
+
+
+
+let  arraay = [1,2,3]
+let is = Array.isArray(arraay)
+console.log(is);
+let string1 = "zaki"
+let ress = Array.isArray(string1)
+console.log(ress);
+
+// from method (form method is use to convert anything in to an array)
+let string = "zaki"
+let arrr = Array.from(string)
+console.log(arrr);
+let obj = {name: "zaki", age: 18}
+let res = Array.from(obj)
+console.log(res);
+console.log(arr.includes("i"));
+console.log(arr.indexOf('i'));
+
+// (to convert many variavle or element in to array we use) "OF METHOD"
+
+let name1 = "zaki"
+let name2 = "zaki2"
+let name3 = "zaki3"
+const arr = Array.of(name1, name2, name3)
+console.log(arr);
