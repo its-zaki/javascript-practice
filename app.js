@@ -150,3 +150,23 @@
 // let operator = prompt("operator",)
 // let res = calc(num1, num2, operator)
 // console.log(res);
+
+// function factorial(n) {
+//     if (n === 0 || n === 1) {
+//       return 1;
+//     } else {
+//       return n * factorial(n - 1);
+//     }
+//   }
+  
+// let num = prompt("enter number")
+// let res = factorial(num)
+
+// console.log(res); 
+
+// function filterEvenNumbers(arr) {
+//     return arr.filter(num => num % 2 !== 0);
+//   }
+  
+// console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6,8,8,9,33,32,20,21,22,23]));
+  
